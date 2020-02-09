@@ -34,7 +34,10 @@ public class App {
         else if (os.contains("mac")) {
             return OStype.MAC;
         }
-        return OStype.LINUX;
+        else if (os.contains("nix") || os.contains("nux") || os.contains("aix")) {
+            return OStype.LINUX;
+        }
+        return null;
     }
 
 }
