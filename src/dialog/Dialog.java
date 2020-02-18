@@ -10,5 +10,6 @@ public abstract class Dialog {
         OKbutton.onClick();
     }
 
+    // Это он и есть – фабричный метод
     abstract Button createButton();
 }
